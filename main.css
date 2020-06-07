@@ -1,5 +1,8 @@
 /* Start global */
-
+* {
+  padding:0;
+  margin:0;
+}
 body {
   background: #1e1e1e;
   color: #eee;
@@ -23,4 +26,75 @@ img {
   width:100%;
 }
 
-/*
+/* Start header */
+
+header {
+  width: 100%;
+  height: 100vh;
+}
+
+.top-nav {
+  width: 100%;
+  height: 100vh;
+  top: -100vh;
+  position: fixed;
+  background-color: #1e1e1e;
+  border-bottom-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+  transition: all 650ms cubic-bezier(1,0,0,1);
+}
+
+
+.nav-list {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  margin: 0 2rem;
+}
+
+.nav-link {
+  font-family: 'Electrolize', sans-serif;
+  font-size: 5rem;
+  padding: 1rem; 
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  background: linear-gradient(to top, #1a6be6, #892cf3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.top-nav.open {
+  top: 0;
+  border-radius: initial;
+}
+
+.menu-toggler {
+  background: red;
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+  width: 5rem;
+  height: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 1500;
+  transition: transform 650ms ease-out;
+}
+
+.menu-toggler.open {
+  transform: rotate(-45deg);
+}
+
+.bar {
+  background: linear-gradient(to right, #ffe838, #fd57bf)
+}
