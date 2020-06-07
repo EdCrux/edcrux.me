@@ -1,5 +1,11 @@
 body {
   background: #1e1e1e;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h6 {
+  font-family: 'Electrolize', sans-serif;
 }
 
 .img-responsive {
