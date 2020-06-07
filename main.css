@@ -2,7 +2,7 @@
 
 body {
   background: #1e1e1e;
-  color: white;
+  color: #eee;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -10,6 +10,17 @@ h1, h2, h6 {
   font-family: 'Electrolize', sans-serif;
 }
 
-.img-responsive {
+a {
+  text-decoration: none;
+  color: #eee;
+}
+
+p {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+img {
   width:100%;
 }
+
+/*
