@@ -14,6 +14,7 @@ body {
 }
 
 h1, h2 {
+  margin:0;
   font-family: 'Oswald', sans-serif;
   letter-spacing: 1px;
   color: #111213;
@@ -30,6 +31,16 @@ p {
 }
 img {
   width:100%;
+}
+
+/* Start reusable */
+
+.container {
+  width: 90%;
+  max-width: 120rem;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
 }
 
 /* Start header */
@@ -146,4 +157,87 @@ li {
 .landing-text-description {
   font-size: 2rem;
   margin-top: 1.5rem;
+}
+
+/* Start about */
+
+.about .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.about-heading {
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 0;
+  margin-bottom: 6rem;
+}
+
+.about-heading h1 {
+  font-size: 10rem;
+  opacity: .3;
+}
+
+.about-heading h6 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.profile-img {
+  flex: 1;
+  margin-right: 5rem;
+}
+
+.about-details {
+  flex: 1;
+}
+
+.social-media {
+  margin-top: 5rem;
+}
+
+.social-media i {
+  font-size: 5rem;
+  color: rgba(42, 59, 71, 0.733);
+  transition: color 650ms;
+}
+
+.fa-twitter-square:hover {
+  color: #38a1f3;
+}
+
+.fa-linkedin-square:hover {
+  color: #0e76a8;
+}
+
+.fa-behance-square:hover {
+  color: #053EFF;
+}
+
+.fa-medium:hover {
+  color: #12100E;
+}
+
+/* Start services */
+
+.my-skills {
+  margin-top: 10rem;
+
+}
+
+.section-heading {
+  text-align: center;
+  margin: 10rem;
+}
+
+.section-heading {
+  font-size: 3.5rem;
+  color: rgba(255,255,255,.3);
+  text-transform: uppercase;
+  font-weight: 300;
+  position: relative;
+  margin-bottom: 1rem;
 }
