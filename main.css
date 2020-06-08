@@ -37,7 +37,6 @@ img {
 
 .container {
   width: 90%;
-  max-width: 120rem;
   height: 100%;
   margin: 0 auto;
   position: relative;
@@ -173,6 +172,7 @@ li {
   text-align: center;
   text-transform: uppercase;
   line-height: 0;
+  margin-top: 5rem;
   margin-bottom: 6rem;
 }
 
@@ -196,11 +196,11 @@ li {
 }
 
 .social-media {
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 .social-media i {
-  font-size: 5rem;
+  font-size: 2rem;
   color: rgba(42, 59, 71, 0.733);
   transition: color 650ms;
 }
@@ -225,7 +225,41 @@ li {
 
 .my-skills {
   margin-top: 10rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 2.5rem;
+  text-align: center;
+}
 
+.skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.skill h1 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 2rem -2px 2rem 0;
+}
+
+.icon-container {
+  width: 10rem;
+  height: 10rem;
+  border: 3px solid #1292EE;
+  background-color: #2A3B47;
+  margin-bottom: 2rem;
+  display: flex;
+  transform: rotate(45deg);
+}
+
+.icon-container i {
+  color: #AEBECD;
+  font-size: 5rem;
+  margin: auto;
+  transform: rotate(-45deg)
 }
 
 .section-heading {
@@ -233,11 +267,65 @@ li {
   margin: 10rem;
 }
 
-.section-heading {
+.section-heading h1{
   font-size: 3.5rem;
-  color: rgba(255,255,255,.3);
   text-transform: uppercase;
   font-weight: 300;
   position: relative;
   margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.section-heading h1::before,
+.section-heading h1::after {
+  content: '';
+  position: absolute;
+  bottom: -.4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #1292EE50;
+}
+
+.section-heading h1::before {
+  width: 9rem;
+  height: 3px;
+  border-radius: .8rem;
+  background-color: #1292EE;
+}
+
+.section-heading h6{
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.has-margin-right {
+  margin-right: 5rem;
+}
+
+/* Start portfolio */
+
+.portfolio-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.portfolio-item:last-child {
+  margin-bottom: 0;
+}
+
+.profile-img {
+  flex: 1;
+}
+
+.portfolio-description {
+  flex: 1;
+}
+
+.portfolio-description h6 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  opacity: 0.3;
 }
