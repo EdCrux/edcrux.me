@@ -165,8 +165,9 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60%;
+  width: 90%;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .about-heading {
@@ -188,8 +189,27 @@ li {
 }
 
 .profile-img {
-  flex: 1;
+  width: 300px;
+  height: 300px;
   margin-right: 5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 1px 1px 8px rgba(0,0,0,0.5);
+}
+
+.profile-img img {
+  transform: translate(60px , 120px) scale(3);
+}
+
+@media screen and (max-width: 768px) {
+  .profile-img {
+    margin: 0 auto;
+  }
+
+  .about .container {
+    width: 60%;
+  }
 }
 
 .about-details {
@@ -316,12 +336,8 @@ li {
   margin-bottom: 0;
 }
 
-.profile-img {
-  flex: 1;
-}
-
 .portfolio-description {
-  flex: 1;
+  flex: 2;
 }
 
 .portfolio-description h6 {
