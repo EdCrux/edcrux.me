@@ -1,30 +1,21 @@
-
-/*
-$(document).ready(function () {
-  $('.menu-toggler').on('click', function () {
-    console.log($(this));
-    $(this).toggleClass('open');
-    $('.top-nav').toggleClass('open');
-  });
-
-  $('.nav-link').on('click', ()=> {
-    $('.menu-toggler').toggleClass('open');
-    $('.top-nav').toggleClass('open');
-  })
-});
-*/
-
 const menu = document.querySelector('.menu-toggler');
 const top_nav = document.querySelector('.top-nav');
-const nav_link = document.querySelector('.nav-link');
+const nav_links = document.querySelectorAll('.nav-link');
 
-menu.addEventListener('click', ()=> {
-  menu.classList.toggle('open');
-  top_nav.classList.toggle('open');
-});
 
-nav_link.addEventListener('click', () => {
+// Menu interaction 
+
+menu.addEventListener('click', (e) => {
+  console.log(e.target)
   menu.classList.toggle('open');
   top_nav.classList.toggle('open');
 })
+
+Array.from(nav_links).forEach( link => {
+  link.addEventListener('click', () => {
+    menu.classList.toggle('open');
+    top_nav.classList.toggle('open');
+  })
+});
+
 
