@@ -69,6 +69,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 li {
@@ -168,6 +169,7 @@ li {
   width: 90%;
   margin: 0 auto;
   flex-wrap: wrap;
+  margin-top: 1rem;
 }
 
 .about-heading {
@@ -252,6 +254,12 @@ li {
   text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+  .my-skills {
+    margin-top: 3rem;
+  }
+}
+
 .skill {
   display: flex;
   flex-direction: column;
@@ -286,6 +294,12 @@ li {
 .section-heading {
   text-align: center;
   margin: 10rem;
+}
+
+@media screen and (max-width:768px) {
+  .section-heading {
+    margin:5rem;
+  }
 }
 
 .section-heading h1{
