@@ -60,6 +60,7 @@ header {
   border-bottom-right-radius: 100%;
   border-bottom-left-radius: 100%;
   transition: all 650ms cubic-bezier(1,0,0,1);
+  z-index: 1000;
 }
 
 
@@ -70,6 +71,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 li {
@@ -405,6 +407,7 @@ form {
   overflow: hidden;
 }
 
+
 form .input {
   width: 100%;
   height: 100%;
@@ -489,4 +492,29 @@ form .submit {
   display: block;
   width:50%;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  form {
+    width: 100%;
+  }
+
+  .container-inputs {
+    width: 80%;
+  }
+
+  #subject {
+    width: 80%;
+  }
+  form .submit {
+    width: 80%;
+  }
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color:white;
 }
