@@ -6,6 +6,7 @@
 * {
   padding:0;
   margin:0;
+  box-sizing: border-box;
 }
 body {
   background: #F8F9FC;
@@ -26,7 +27,7 @@ a {
 }
 
 p {
-  font-size: 1.7rem;
+  font-size: 1rem;
   font-weight: 300;
 }
 img {
@@ -165,9 +166,10 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 90%;
+  width: 70%;
   margin: 0 auto;
   flex-wrap: wrap;
+  padding-top: 1rem;
 }
 
 .about-heading {
@@ -285,7 +287,7 @@ li {
 
 .section-heading {
   text-align: center;
-  margin: 10rem;
+  margin: 5rem;
 }
 
 .section-heading h1{
@@ -327,22 +329,164 @@ li {
 
 .portfolio-item {
   display: flex;
+  width: 80%;
+  margin:0 auto;
   align-items: center;
   justify-content: center;
   margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio-item {
+    flex-wrap: wrap;
+  }
 }
 
 .portfolio-item:last-child {
   margin-bottom: 0;
 }
 
-.portfolio-description {
-  flex: 2;
-}
-
 .portfolio-description h6 {
   font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: 300;
-  opacity: 0.3;
+}
+
+.portfolio-description .portfolio-par {
+  padding: 1.8rem 0;
+}
+
+
+.portfolio-img {
+  width: 100%;
+  padding: 1rem;
+}
+
+.portfolio-video {
+  width: 100%;
+  height: 30vh;
+}
+
+
+.date h1 {
+  margin-bottom: 1.5rem;
+}
+
+.date p {
+  margin-bottom: 1.5rem;
+}
+
+.cta {
+  margin-top: 3rem;
+  border-radius: 8px;
+  padding: 0.5rem;
+  background-color: #1292EE;
+  color:white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.cta:hover {
+  background-color: #1a6be6;
+}
+
+
+.container-inputs {
+  margin: 0 auto;
+  width: 50%;
+  position: relative;
+}
+
+form {
+  width:50%;
+  margin:0 auto 2rem auto;
+  position: relative;
+  padding-top:20px;
+  overflow: hidden;
+}
+
+form .input {
+  width: 100%;
+  height: 100%;
+  color: black;
+  padding-top: 20px;
+  border: none;
+  outline: none;
+  overflow: hidden;
+}
+
+form label {
+  position:absolute;
+  bottom: 0px;
+  left:0%;
+  width:100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom:1px solid #1292EE;
+}
+
+form label::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -1px;
+  height: 100%;
+  width: 0;
+  border-bottom: 3px solid #5fa8d3;
+  transition: all 0.3s ease;
+}
+
+
+.container-input {
+  height: 50px;
+  overflow: hidden;
+}
+
+.copyright {
+  background-color: #2A3B47;
+  height: 100px;
+}
+
+.content-name {
+  position:absolute;
+  bottom: 0px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+
+form input:focus + .label-name .content-name, 
+form input:valid + .label-name .content-name {
+  transform: translateY(-160%);
+  font-size: 14px;
+  color: #5fa8d3;
+}
+
+form input:focus + .label-name::after, form input:valid + .label-name::after {
+  width: 100%;
+}
+
+#service {
+  background-color:#1292ee;
+  color: white;
+  border: none;
+  display: block;
+  width:50%;
+  margin: 0 auto;
+}
+
+#subject {
+  display: block;
+  margin: 0 auto;
+  width:50%;
+}
+
+form .submit {
+  background-color:#1292ee;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 8px;
+  display: block;
+  width:50%;
+  margin: 0 auto;
 }
