@@ -256,6 +256,12 @@ li {
   text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+  .my-skills {
+    margin-top: 3rem;
+  }
+}
+
 .skill {
   display: flex;
   flex-direction: column;
@@ -290,6 +296,12 @@ li {
 .section-heading {
   text-align: center;
   margin: 5rem;
+}
+
+@media screen and (max-width:768px) {
+  .section-heading {
+    margin:5rem;
+  }
 }
 
 .section-heading h1{
