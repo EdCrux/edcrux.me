@@ -1,21 +1,19 @@
-const menu = document.querySelector('.menu-toggler');
+const menu_toggler = document.querySelector('.menu-toggler');
 const top_nav = document.querySelector('.top-nav');
-const nav_links = document.querySelectorAll('.nav-link');
+const nav_link = document.querySelectorAll('.nav-link');
 
 
-// Menu interaction 
-
-menu.addEventListener('click', (e) => {
-  console.log(e.target)
-  menu.classList.toggle('open');
+menu_toggler.addEventListener('click', () => {
+  menu_toggler.classList.toggle('open');
   top_nav.classList.toggle('open');
 })
 
-Array.from(nav_links).forEach( link => {
+
+nav_link.forEach( link => {
   link.addEventListener('click', () => {
-    menu.classList.toggle('open');
+    menu_toggler.classList.toggle('open');
     top_nav.classList.toggle('open');
   })
-});
+})
 
 

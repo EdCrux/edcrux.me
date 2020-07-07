@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Raleway:wght@100&display=swap" rel="stylesheet">
   <title>edCrux</title>
 </head>
-<body>
+<body data-aos-easing="ease-out-back" data-aos-duration="1000" data-gr-c-s-loaded="true">
   <header>
     <div class="menu-toggler">
       <div class="bar half start"></div>
@@ -37,16 +37,16 @@
       </ul>
     </nav>
     <div class="landing-text">
-      <img src="images/edcrux.svg" alt="logo" />
-      <h3 class="landing-text-description">Web Developer | Designer </h3>
+      <img src="images/edcrux.svg" alt="logo" data-aos="zoom-in" data-aos-delay="2"/>
+      <h3 class="landing-text-description" data-aos="fade-down" data-aos-delay="1">Web Developer | Designer </h3>
     </div>
   </header>
   <section class="about" id="about">
     <div class="container">
-      <div class="profile-img">
+      <div class="profile-img" data-aos="fade-up" data-aos-offset="300">
         <img src="images/profile.png" alt="profile-img">
       </div>
-      <div class="about-details">
+      <div class="about-details" data-aos="fade-down">
         <div class="about-heading">
           <h1>About</h1>
           <h6>Myself</h6>
@@ -85,21 +85,21 @@
   </section>
   <section class="services" id="services">
     <div class="container">
-      <div class="section-heading">
+      <div class="section-heading" data-aos="flip-left">
         <h1>Services</h1>
         <h6>What I can do for you?</h6>
       </div>
       <div class="my-skills">
-        <div class="skill">
+        <div class="skill" data-aos="zoom-in-up">
           <div class="icon-container">
             <i class="fa fa-code"></i>
           </div>
           <h1>Web Development</h1>
           <p>
-            Using rails-react combination, I could build solutions for your company
+            With web applications, you can increase the productivity of your business
           </p>
         </div>
-        <div class="skill">
+        <div class="skill" data-aos="zoom-in-down">
           <div class="icon-container">
             <i class="fas fa-layer-group"></i>
           </div>
@@ -119,54 +119,57 @@
       </div>
       <div class="portfolio-item">
         <div class="portfolio-img">
-          <img src="images/portfolio1.png" alt="portfolio1" class="img-responsive" />
+          <img src="https://github.com/kitpao/private-events/blob/development/app/assets/images/desktop.png?raw=true" alt="portfolio1" class="img-responsive"  data-aos="fade-right"/>
         </div>
-        <div class="portfolio-description has-margin-right">
+        <div class="portfolio-description" data-aos="fade-left">
           <h6>Web Development</h6>
-          <h1>Facebook clone</h1>
-          <p>
-            Emulating a facebook clone, usign ruby on rails, deployed through heroku.  
+          <h1>Private Events</h1>
+          <p data-aos="zoom-in-left" class="portfolio-par">
+            A webpage that manage user signups, and each user can create events and invite other users to them. Events take place at a specific date and at a location and then are classified by "upcomming events" and "past events". We made use of ActiveRecord’s associations in depth.  
           </p>
-          <a href="#" class="cta">View Details</a>
+          <a href="https://github.com/kitpao/private-events" class="cta"  target="_blank">View Details</a>
+          <a href="https://floating-chamber-00036.herokuapp.com" class="cta"  target="_blank">Live Demo</a>
         </div>
       </div>
       <div class="portfolio-item">
-        <div class="portfolio-description has-margin-right">
+        <div class="portfolio-description">
           <h6>Web Development</h6>
-          <h1>Product layouy with HTML and CSS</h1>
-          <p>
-             An pure html and css project, to create a beatu layour based on a previous desing
+          <h1>E-commerce layout with HTML and CSS</h1>
+          <p data-aos="zoom-in-left" class="portfolio-par">
+             An pure html and css project, to create a beautiful layout based on a previous desing.
           </p>
-          <a href="#" class="cta">View Details</a>
+          <a href="https://github.com/EdCrux/Flower-Shop-Capstone-project" class="cta"  target="_blank">View Details</a>
+          <a href="https://edcrux.github.io/Flower-Shop-Capstone-project/" class="cta"  target="_blank">Live Demo</a>
         </div>
         <div class="portfolio-img">
-          <img src="images/portfolio2.png" alt="portfolio1" class="img-responsive" />
+          <img src="images/portfolio2.png" alt="portfolio1" class="img-responsive" data-aos="fade-right"/>
         </div>
       </div>
       <div class="portfolio-item">
         <div class="portfolio-img">
-          <img src="images/MacBook-Clay-White-Frontal-Free-Mockup.jpg" alt="portfolio1" class="img-responsive" />
+          <iframe class="portfolio-video" src="https://www.youtube.com/embed/z4WhD7RyUxc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-aos="fade-right"></iframe>
         </div>
-        <div class="portfolio-description has-margin-right">
-          <h6>Web Design</h6>
-          <h1>Product Sketch</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi reiciendis quaerat quo. 
+        <div class="portfolio-description">
+          <h6>Web Development</h6>
+          <h1>MercurySearch-CapstoneProject</h1>
+          <p data-aos="zoom-in-left" class="portfolio-par">
+            Creating a bot using slack API and spotify API. 
           </p>
-          <a href="#" class="cta">View Details</a>
+          <a href="https://github.com/EdCrux/SearchPlayList-CapstoneProject" class="cta"  target="_blank">View Details</a>
+
         </div>
       </div>
     </div>
   </section>
   <section class="experience" id="experience">
     <div class="container">
-      <div class="section-heading">
+      <div class="section-heading" data-aos="flip-left">
         <h1>Work Experience</h1>
         <h6>Past and current jobs</h6>
       </div>
       <div class="timeline">
         <ul>
-          <li class="date" data-date="2011 - Present">
+          <li class="date" data-date="2011 - Present" data-aos="flip-down">
             <h1>Mentor | Freelance software developer</h1>
             <p>
               Mentored junior web developers, providing technical support through code reviews. 
@@ -174,17 +177,17 @@
               Provided advice and tips on how to maintain motivation to maintain longevity in the program
             </p>
           </li>
-          <li class="date" data-date="2008 - 2011">
+          <li class="date" data-date="2008 - 2011" data-aos="flip-up">
             <h1>Photographer and District Manager</h1>
             <p>
               Provide solutions remotely to photographic studio chain partners. Recruit, train and monitor staff, around 8 photographic studios located in 3 states of the country. 
             </p>
           </li>
-          <li class="date" data-date="2002 - 2007">
+          <li class="date" data-date="2002 - 2007" data-aos="flip-down">
             <h1>Technology Content Writer</h1>
             <p>
               Published for hackernoon.com a site with more than 4,000,000 monthly readers. 
-              <a href="https://hackernoon.com/what-if-we-add-some-css-animations-to-our-page-4j7j36jt" class="">Article</a>
+              <a href="https://hackernoon.com/what-if-we-add-some-css-animations-to-our-page-4j7j36jt" class=""  target="_blank">Article</a>
             </p>
           </li>
         </ul>
@@ -192,35 +195,52 @@
     </div>
   </section>
 
-  <section class="experience" id="experience">
+  <section class="experience" id="experience" data-aos="zoom-in">
     <div class="container">
-      <div class="section-heading">
+      <div class="section-heading" data-aos="flip-left" id="contact"> 
         <h1>Contact</h1>
         <h6>Let's work together</h6>
       </div>
     </div>
-    <form action="mailto:jecruxiz@gmail.com" method="post">
-      <label for="name">Name:</label><br>
-      <input type="text" id="name" name="name" placeholder="Enter your name" required /><br>
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email" placeholder="Enter your name" required /><br>
-      <label for="service">Service: </label><br>
+    <form action="mailto:jecruxiz@gmail.com" method="post" >
+
+      <div class="container-inputs">
+        <div class="container-input">  
+          <input type="text" id="name" name="name" autocomplete="off" required class="input"/>
+          <label for="name" class="label-name">
+            <span class="content-name">Name</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="container-inputs">
+        <div class="container-input">
+          <input type="email" id="email" name="email" required class="input" />
+          <label for="email" class="label-name">
+            <span class="content-name">Email</span>
+          </label>
+        </div>
+      </div>
+      <br>
       <select name="services" id="service">
         <option value="">Web Design</option>
         <option value="">Web Development</option>
         <option value="">Web Design/Development</option>
-      </select><br>
-      <label for="subject">Subject: </label><br>
-      <textarea name="subject" id="subject" cols="15" rows="5">HEy</textarea><br>
-      <input type="submit" value="Submit" />
+      </select>
+      <br>
+      <textarea name="subject" id="subject" cols="8" rows="5" class="input"></textarea>
+
+      <br>
+      <input type="submit" value="Submit" class="submit" />
     </form>
   </section> 
   <footer class="copyright">
     <div class="up" id="up">
       <i class="fa fa-copyright"></i>
+      All rigths reserved
+
     </div>
   </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="main.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
